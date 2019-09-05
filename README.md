@@ -47,13 +47,6 @@ https://yourserver/index.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com
 ## Screenshot
 ![alt screenshot](screenshot.JPG)
 
-## Demo (using GitHub free hosting)
-#### Point your SSID's Splash Page customer URL to:
-https://github.com/mpapazog/meraki-wifi4eu-portal/blob/master/public/index.html
-
-#### Quick Test (with sample parameters, just click the link to see the mechanics in action!):
-https://github.com/mpapazog/meraki-wifi4eu-portal/blob/master/public/index.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fspeedof.me%2F&node_id=149624922840090&node_mac=88:15:44:60:1c:1a&gateway_id=149624922840090&client_ip=10.255.60.208&client_mac=f4:5c:89:9b:17:67
-
 
 ## Additional Resources
 https://developer.cisco.com/meraki/captive-portal-api/
