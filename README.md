@@ -40,7 +40,7 @@ node server.js
 * **Note:** When running the selftest modus, please ignore possible log messages about overlapCheck failing. This is a known issue in the tracking snippet itself, and does not affect compliance.
 
 
-## Sample URL paramater string
+## Sample URL parameter string
 ```
 https://yourserver/index.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fask.com%2F&node_id=149624921787028&node_mac=88:15:44:50:0a:94&gateway_id=149624921787028&client_ip=10.110.154.195&client_mac=60:e3:ac:f7:48:08:22
 ```
