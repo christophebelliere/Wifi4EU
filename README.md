@@ -37,6 +37,8 @@ node server.js
 ```
 - The server will host the project on port 5000.
 
+* **Note:** When running the selftest modus, please ignore possible log messages about overlapCheck failing. This is a known issue in the tracking snippet itself, and does not affect compliance.
+
 
 ## Sample URL paramater string
 ```
