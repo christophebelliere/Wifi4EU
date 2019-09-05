@@ -45,7 +45,7 @@ https://yourserver/index.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com
 ```
 
 ## Screenshot
-![alt screenshot](screenshot.jpg)
+![alt screenshot](screenshot.JPG)
 
 ## Demo (using GitHub free hosting)
 #### Point your SSID's Splash Page customer URL to:
