@@ -5,21 +5,6 @@ var node_mac = GetURLParameter("node_mac");
 var client_ip = GetURLParameter("client_ip");
 var client_mac = GetURLParameter("client_mac");
 
-// Print Meraki provided paramaters for Debugging State
-console.log("user_continue_url: "+user_continue_url);
-console.log("client_ip: "+client_ip);
-document.getElementById("baseGrantURL").innerHTML = base_grant_url;
-document.getElementById("userContinueURL").innerHTML = user_continue_url;
-document.getElementById("clientIP").innerHTML = client_ip;
-document.getElementById("clientMAC").innerHTML = client_mac;
-document.getElementById("nodeMAC").innerHTML = node_mac;
-
-// Form Submit handler. 
-document.getElementById('loginForm').onsubmit= function(e){
-    e.preventDefault(); //prevents default form submission process to allow login and validation
-    login();
-}
-
 // ******************
 // Login to Meraki by redirecting client to the base_grant_url 
 // 
