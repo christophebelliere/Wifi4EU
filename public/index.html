@@ -37,17 +37,14 @@ LICENSE: MIT
         <script type="text/javascript" src="https://collection.wifi4eu.ec.europa.eu/wifi4eu.min.js"></script>
     </head>
     
+    <script src="./js/meraki.js"></script>
+    
     <body>
     <div id="identityContainer" class="identity-container">   
         <img id="wifi4eulogo" class="identity-image">
         <br>
-        <form id="loginForm" action="#">
-        <fieldset>
-            <button type="submit" >Log in to WiFi</button>
-        </fieldset>
+        <button onclick="login();" >Log in to WiFi</button>
         <p>Terms of use <a href="./aup.html">here</a>.</p>
-        
-      </form>
     </div>
     <!--<h4>Debugging Stats</h4>
     <p><label>Base Grant URL: </label><label id="baseGrantURL"></label></p>
@@ -56,6 +53,5 @@ LICENSE: MIT
     <p><label>Client MAC: </label><label id="clientMAC"></label></p>
     <p><label>Access Point MAC: </label><label id="nodeMAC"></label></p>-->
         
-    <script src="./js/meraki.js"></script>
     </body>
 </html>
