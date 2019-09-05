@@ -1,11 +1,13 @@
 
-#  Meraki Captive Portal
-*Static HTML/JS/CSS Site for a Click-through Splash Page*
+#  Meraki Wifi4EU Captive Portal
+*Static HTML/JS/CSS Site for a Click-through Splash Page with Wifi4EU tracking snippet integration*
 
 
 
 
 ## Overview
+The Wifi4EU programme requires the use of a captive portal that connects to the Wifi4EU metrics infrastructure. You can read more about this here: https://ec.europa.eu/digital-single-market/en/news/wifi4eu-tracking-snippet-guideline
+
 Cisco Meraki provides cloud managed WiFi with the ability to host your own "Splash Page", which is a captive portal service for authenticating users to join the network. This concept is called an External Captive Portal (ExCaP). 
 
 Meraki provides two splash page modes, **click-through** and **sign-on**. This application will use the click-through method.
@@ -18,14 +20,15 @@ Since this is just a starter application. It will authenticate the user on the w
 * Host the public directory files on a static webserver such as Apache, GitHub or Firebase, or use the included NodeJS express server. 
 * Configure the Meraki wireless SSID with a Click-Through splash page authentication
     * Meraki Dashboard --> Configure --> Splash Page: Click-through
-* Add the domain address of the webserver to the "Walled Garden" 
+* Add the domain address of the webserver and the Wifi4EU resources to the "Walled Garden" 
     * Meraki Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
-    * Note: You will need to use the IP address instead of the domain name or contact Meraki Support to enable Walled Garden Domain Names
+    * The domain for the Wifi4EU resources is **collection.wifi4eu.ec.europa.eu**
+    * Note: You will need to use the IP addresses associated with these resources instead of their domain names or contact Meraki Support to enable Walled Garden Domain Names
 * Point the Meraki Splash page "Customer URL" to the HTML file. `https://yourserver/`
     * Meraki Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
 
 * **Option 1:** Static Web Server 
-(Apache, Firebase Hosting)
+(Apache, nginx, Firebase Hosting)
    * Copy public directory to server
 * **Option 2:** NodeJS Server
    * In the root directory of the project, run 
@@ -53,9 +56,9 @@ https://dexterlabora.github.io/excap-clientjs/public/index.html?base_grant_url=h
 
 
 ## Additional Resources
-http://developers.meraki.com/tagged/Splash-Pages
+https://developer.cisco.com/meraki/captive-portal-api/
 
-### Written by 
+### Based on example code by
 Cory Guynn
 2017
 www.InternetOfLEGO.com
