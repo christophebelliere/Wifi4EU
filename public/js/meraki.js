@@ -27,8 +27,9 @@ document.getElementById('loginForm').onsubmit= function(e){
 // redirect to their intended site. 
 // (you could override this url to send the user to a home page)
 // ****************** 
-function authUser(){
 
+// Button handler function to login
+function login(){    
     var loginUrl = base_grant_url;
     if(user_continue_url !== "undefined"){
         loginUrl += "?continue_url="+user_continue_url;
@@ -36,19 +37,6 @@ function authUser(){
     console.log("Logging in... ",loginUrl);
     // redirect browser to meraki auth URL.
     window.location.href = loginUrl;
-}
-
-// Button handler function to store the form data and login. 
-function login(){
-    // send the data somewhere like a database
-    var data = {};
-    data.name = document.getElementById("name").value;
-    data.email = document.getElementById("email").value;
-    alert("Hello "+data.name +"\n"+"Thanks for providing your email: "+data.email);
-    console.log("Storing data to db...", data);
-
-    // Complete Login
-    authUser();
 }
 
 // Helper function to parse URL
