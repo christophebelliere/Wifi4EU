@@ -15,7 +15,7 @@ Meraki provides two splash page modes, **click-through** and **sign-on**. This a
 To get started just host these files in the public directory on any web server such as nginx, Apache or Firebase Hosting and configure your Meraki SSID to use your server. 
 
 ## Installation
-* Host the public directory files on a static webserver such as Apache, GitHub or Firebase, or use the included NodeJS express server. 
+* Host the public directory files on a static webserver such as nginx, Apache, GitHub or Firebase, or use the included NodeJS express server. 
 * Configure the Meraki wireless SSID with a Click-Through splash page authentication
     * Meraki Dashboard --> Configure --> Splash Page: Click-through
 * Add the domain address of the webserver and the Wifi4EU resources to the "Walled Garden" 
