@@ -1,12 +1,12 @@
 
-#  Meraki Wifi4EU Captive Portal
-*Static HTML/JS/CSS Site for a Click-through Splash Page with Wifi4EU tracking snippet integration*
+#  Meraki WiFi4EU Captive Portal
+*Static HTML/JS/CSS Site for a Click-through Splash Page with WiFi4EU tracking snippet integration*
 
 
 
 
 ## Overview
-The Wifi4EU programme requires the use of a captive portal that connects to the Wifi4EU metrics infrastructure. You can read more about this here: https://ec.europa.eu/digital-single-market/en/news/wifi4eu-tracking-snippet-guideline
+The WiFi4EU programme requires the use of a captive portal that connects to the WiFi4EU metrics infrastructure. You can read more about this here: https://ec.europa.eu/digital-single-market/en/news/wifi4eu-tracking-snippet-guideline
 
 Cisco Meraki provides cloud managed WiFi with the ability to host your own "Splash Page", which is a captive portal service for authenticating users to join the network. This concept is called an External Captive Portal (ExCaP). 
 
@@ -19,9 +19,9 @@ To get started just host these files in the public directory on any web server s
 * Host the public directory files on a static webserver such as nginx, Apache, GitHub or Firebase, or use the included NodeJS express server. 
 * Configure the Meraki wireless SSID with a Click-Through splash page authentication
     * Meraki Dashboard --> Configure --> Splash Page: Click-through
-* Add the domain address of the webserver and the Wifi4EU resources to the "Walled Garden" 
+* Add the domain address of the webserver and the WiFi4EU resources to the "Walled Garden" 
     * Meraki Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
-    * The domain for the Wifi4EU resources is **collection.wifi4eu.ec.europa.eu**
+    * The domain for the WiFi4EU resources is **collection.wifi4eu.ec.europa.eu**
 * Point the Meraki Splash page "Customer URL" to the HTML file. `https://yourserver/`
     * Meraki Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
 
