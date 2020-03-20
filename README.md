@@ -22,7 +22,6 @@ To get started just host these files in the public directory on any web server s
 * Add the domain address of the webserver and the Wifi4EU resources to the "Walled Garden" 
     * Meraki Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
     * The domain for the Wifi4EU resources is **collection.wifi4eu.ec.europa.eu**
-    * Note: You will need to use the IP addresses associated with these resources instead of their domain names or contact Meraki Support to enable Walled Garden Domain Names
 * Point the Meraki Splash page "Customer URL" to the HTML file. `https://yourserver/`
     * Meraki Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
 
